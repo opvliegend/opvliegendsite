@@ -1,118 +1,105 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins',sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@500&display=swap');
+
+* {
+    font-family: 'Sono', sans-serif;
+    letter-spacing: 4px;
+    background-color: rgb(52, 0, 52);
 }
-::selection{
-  color: #000;
-  background: #5000c1;
+
+.container {
+    display: flex;
+    flex-direction: rox;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+
 }
-nav{
-  position: fixed;
-  background: #5000c1;
-  width: 100%;
-  padding: 10px 0;
-  z-index: 12;
+
+.btn-1 {
+    width: 300px;
+    height: 100px;
+    border: none;
+    color: white;
+    background-color: rgb;
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 0 rgb(120, 2, 120);
+    transition: ease-out 0.5s;
+    font-size: 2rem;
+    outline: none;
+    position:relative;
+    z-index: 1;
 }
-nav .menu{
-  max-width: 1250px;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
+
+.btn-1:hover {
+    box-shadow: inset 300px 0 0 0 rgb(107, 0, 107);
+    cursor: pointer;
+    color: #fff;
 }
-.menu .logo a{
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-  font-size: 35px;
-  font-weight: 600;
+
+.btn-1:before {
+
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+
 }
-.menu ul{
-  display: inline-flex;
+
+.btn-1:hover:before {
+
+    transition: 0.5s all ease;
+    left: 1;
+    right: 1;
+    opacity: 1;
+    z-index: -1;
+
 }
-.menu ul li{
-  list-style: none;
-  margin-left: 7px;
+
+/* knopje 2*/
+
+.btn-2 {
+    width: 300px;
+    height: 100px;
+    border: none;
+    color: white;
+    background-color: rgb;
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 0 rgb(120, 2, 120);
+    transition: ease-out 0.5s;
+    font-size: 2rem;
+    outline: none;
+    position:relative;
+    z-index: 1;
 }
-.menu ul li:first-child{
-  margin-left: 0px;
+
+.btn-2:hover {
+    box-shadow: inset 300px 0 0 0 rgb(107, 0, 107);
+    cursor: pointer;
+    color: #fff;
 }
-.menu ul li a{
-  text-decoration: none;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 500;
-  padding: 8px 15px;
-  border-radius: 5px;
-  transition: all 0.3s ease;
+
+.btn-2:before {
+
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+
 }
-.menu ul li a:hover{
-  background: #5000c1;
-  color: black;
-}
-.img{
-  background: url('img3.jpg')no-repeat;
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-}
-.img::before{
-  content: '';
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.4);
-}
-.center{
-  position: absolute;
-  top: 52%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  padding: 0 20px;
-  text-align: center;
-}
-.center .title{
-  color: #5000c1;
-  font-size: 55px;
-  font-weight: 600;
-}
-.center .sub_title{
-  color: #5000c1;
-  font-size: 50px;
-  font-weight: 600;
-}
-.center .btns{
-  margin-top: 20px;
-}
-.center .btns button{
-  height: 55px;
-  width: 170px;
-  border-radius: 5px;
-  border: none;
-  margin: 0 10px;
-  border: 2px solid white;
-  font-size: 20px;
-  font-weight: 500;
-  padding: 0 10px;
-  cursor: pointer;
-  outline: none;
-  transition: all 0.3s ease;
-}
-.center .btns button:first-child{
-  color: #fff;
-  background: none;
-}
-.btns button:first-child:hover{
-  background: white;
-  color: black;
-}
-.center .btns button:last-child{
-  background: white;
-  color: rgb(0, 0, 0);
+
+.btn-2:hover:before {
+
+    transition: 0.5s all ease;
+    left: 1;
+    right: 1;
+    opacity: 1;
+    z-index: -1;
+
 }
