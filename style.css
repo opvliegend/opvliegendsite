@@ -103,3 +103,76 @@
     z-index: -1;
 
 }
+
+/* TITEL*/
+
+h1  {
+
+    color: #fff;
+    height: 300px;
+    
+    
+}
+
+h2  {
+
+    color:#fff;
+
+
+}
+
+*   {
+    margin: 0;
+    padding: 0;
+
+}
+
+nav {
+    width: 12%;
+    height: 50px;
+}
+
+
+ul {
+    
+
+}
+
+
+ul li {
+
+    list-style: none;
+    display: inline;
+    float: left;
+    line-height: 50px;
+
+}
+
+
+ul li a {
+
+    text-decoration: none;
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #fff;
+    padding: 0 15px;
+
+}
+
+ul li a:hover {
+
+    color: black;
+    transition: 0.3s ease-in;
+
+}
+
+
+ul li a:hover:before {
+
+    transition: 0.5s all ease;
+    left: 1;
+    right: 1;
+    opacity: 1;
+    z-index: -1;
+
+}
