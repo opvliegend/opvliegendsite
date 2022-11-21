@@ -190,10 +190,11 @@ ul li a:hover:before {
 
 
 .homebtn {
- 
+
+    margin: auto;
     text-align: center;
-    border: 0px solid purple;
-    border-radius: 3px;
+    border: 0px purple;
+    border-radius: 0;
     color: white;
     width: 85px;
     height: 30px;
