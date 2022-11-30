@@ -147,3 +147,10 @@
     opacity: 1;
     z-index: -1;
   }
+
+  /* homeknop */
+
+.btnhome {
+
+    position: absolute;
+}
