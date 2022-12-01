@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Sono:wght@500&display=swap");
 * {
   font-family: "Sono", sans-serif;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
   background-color: black;
 }
 
@@ -20,9 +20,10 @@
     margin: auto;
     width: 300px;
     height: 100px;
-    border: 5px;
-    color: greenyellow;
-    border-radius: 5px;
+    border: 1px solid;
+    color: green;
+    -webkit-text-fill-color: greenyellow;
+    border-radius: 10px;
     box-shadow: inset 0 0 0 0 green;
     transition: ease-out 0.5s;
     font-size: 2rem;
@@ -35,6 +36,7 @@
     box-shadow: inset 300px 0 0 0 greenyellow;
     cursor: pointer;
     color: #fff;
+    -webkit-text-fill-color: #fff;
 }
 
 .btnam:before {
@@ -66,9 +68,10 @@
     margin: auto;
     width: 300px;
     height: 100px;
-    border: 5px;
-    color: greenyellow;
-    border-radius: 5px;
+    border: 1px solid;
+    color: green;
+    -webkit-text-fill-color: greenyellow;
+    border-radius: 10px;
     box-shadow: inset 0 0 0 0 green;
     transition: ease-out 0.5s;
     font-size: 2rem;
@@ -81,6 +84,7 @@
     box-shadow: inset 300px 0 0 0 greenyellow;
     cursor: pointer;
     color: #fff;
+    -webkit-text-fill-color: #fff;
 }
 
 .btncm:before {
@@ -111,9 +115,10 @@
     margin: auto;
     width: 300px;
     height: 100px;
-    border: 5px;
-    color: greenyellow;
-    border-radius: 5px;
+    border: 1px solid;
+    color: green;
+    -webkit-text-fill-color: greenyellow;
+    border-radius: 10px;
     box-shadow: inset 0 0 0 0 green;
     transition: ease-out 0.5s;
     font-size: 2rem;
@@ -126,6 +131,7 @@
     box-shadow: inset 300px 0 0 0 greenyellow;
     cursor: pointer;
     color: #fff;
+    -webkit-text-fill-color: #fff;
 }
 
 .btnd:before {
@@ -155,6 +161,44 @@
 .btnhome{
 
     position: absolute;
+    margin-top: -25px;
     top: 0;
     z-index: 9;
+}
+
+.dtext{
+
+    color: green;
+    position: relative;
+}
+
+.dtext:hover{
+
+    transition: 1s ease-in-out;
+    color: greenyellow;
+}
+
+.dtext2{
+
+    border: 1px solid green;
+    border-radius: 20px;
+    color: greenyellow;
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.dtext2:hover{
+
+    transition: 0.5s ease-in;
+    color: green;
+    border-color: greenyellow;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.titeltxt{
+
+    position: relative;
+    text-align: center;
+    color: greenyellow;
+    margin-top: 10px;
 }
