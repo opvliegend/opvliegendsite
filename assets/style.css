@@ -154,15 +154,7 @@
 
 .btnhome{
 
-    border: 10px;
-    border-color: green;
     position: absolute;
     top: 0;
     z-index: 9;
-}
-
-.btnhome:hover{
-
-    cursor: pointer;
-    transition: ease-in;
 }
