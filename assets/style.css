@@ -2,9 +2,13 @@
 * {
   font-family: "Sono", sans-serif;
   letter-spacing: 3px;
-  background-color: black;
+  /*background-color: black;*/
 }
 
+body{
+    background-image: url("./bg.png");
+    background-repeat: repeat;
+}
 .container {
   display: flex;
   flex-direction: rox;
@@ -161,7 +165,6 @@
 .btnhome{
 
     position: absolute;
-    margin-top: -25px;
     top: 0;
     z-index: 9;
 }
@@ -201,4 +204,15 @@
     text-align: center;
     color: greenyellow;
     margin-top: 10px;
+}
+
+.btnhome img{
+    padding: 25px;
+    margin: 15px;
+}
+
+.btnhome img:hover{
+    background-color: blue;
+    transition: 2s;
+    border-radius: 15px;
 }
