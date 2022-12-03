@@ -30,6 +30,7 @@
 </center>
 </div>
 
+<!--BITCOIN KNOP-->
 <div class="copy-link-btc">
 
   <h3 style="opacity: 0; font-size: 24px;">K</h3>
@@ -37,7 +38,7 @@
   <h3 style="opacity: 0; font-size: 24px;">K</h3>
   <center>
   <i class="fa-brands fa-bitcoin fa-3x"></i>
-  <input type="button" class="copy-link-input" value="bc1qpywjqszkhsjzjfuhq2gwh5fdh7j6076czu0fc3" readonly>
+  <input type="button" class="copy-link-input-btc" value="bc1qpywjqszkhsjzjfuhq2gwh5fdh7j6076czu0fc3" readonly>
   <button type="button" class="copy-link-btn-btc">
     <span class="material-icons">COPY</span>
   </button>
@@ -46,7 +47,7 @@
 
 <script>
   document.querySelectorAll(".copy-link-btc").forEach(copyLinkContainer => {
-    const inputField = copyLinkContainer.querySelector(".copy-link-input");
+    const inputField = copyLinkContainer.querySelector(".copy-link-input-btc");
     const copyButton = copyLinkContainer.querySelector(".copy-link-btn-btc");
 
     inputField.addEventListener("focus", () => inputField.select());
@@ -59,10 +60,75 @@
       navigator.clipboard.writeText(text);
 
       inputField.value = "Copied";
-      setTimeout(() => inputField.value = text, 2000);
+      setTimeout(() => inputField.value = text, 1250);
     })
   })
 </script>
 
+<h3 style="opacity: 0; font-size: 8px;">K</h3>
+
+<!--ETHEREUM KNOP-->
+<div class="copy-link-eth">
+  <center>
+  <i class="fa-brands fa-ethereum fa-3x"></i>
+  <input type="button" class="copy-link-input-eth" value="0x19cf77D91703F5404c7621500d3ac57709ed7cB2" readonly>
+  <button type="button" class="copy-link-btn-eth">
+    <span class="material-icons">COPY</span>
+  </button>
+  </center>
+</div>
+
+<script>
+  document.querySelectorAll(".copy-link-eth").forEach(copyLinkContainer => {
+    const inputField = copyLinkContainer.querySelector(".copy-link-input-eth");
+    const copyButton = copyLinkContainer.querySelector(".copy-link-btn-eth");
+
+    inputField.addEventListener("focus", () => inputField.select());
+
+    copyButton.addEventListener("click", () => {
+
+      const text = inputField.value;
+
+      inputField.select();
+      navigator.clipboard.writeText(text);
+
+      inputField.value = "Copied";
+      setTimeout(() => inputField.value = text, 1250);
+    })
+  })
+</script>
+
+<h3 style="opacity: 0; font-size: 8px;">K</h3>
+
+<!--LITECOIN KNOP-->
+<div class="copy-link-ltc">
+  <center>
+    <img src="./assets/ltc.png" alt="ltci" class="ltci">
+  <input type="button" class="copy-link-input-ltc" value="LPUzqwENzobBdN1moaghze1tWFnRn4txWF" readonly>
+  <button type="button" class="copy-link-btn-ltc">
+    <span class="material-icons">COPY</span>
+  </button>
+  </center>
+</div>
+
+<script>
+  document.querySelectorAll(".copy-link-ltc").forEach(copyLinkContainer => {
+    const inputField = copyLinkContainer.querySelector(".copy-link-input-ltc");
+    const copyButton = copyLinkContainer.querySelector(".copy-link-btn-ltc");
+
+    inputField.addEventListener("focus", () => inputField.select());
+
+    copyButton.addEventListener("click", () => {
+
+      const text = inputField.value;
+
+      inputField.select();
+      navigator.clipboard.writeText(text);
+
+      inputField.value = "Copied";
+      setTimeout(() => inputField.value = text, 1250);
+    })
+  })
+</script>
 </body>
 </html>

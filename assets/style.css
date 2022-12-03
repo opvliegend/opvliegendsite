@@ -108,9 +108,52 @@ body{
     border-radius: 6px;
 }
 
+/*ETHEREUM*/
 
+.copy-link-eth .copy-link-input-eth{
 
-.copy-link-btc .copy-link-input{
+    opacity: 1;
+    height: 52px;
+    border: 2px solid green;
+    border-radius: 5px;
+    background-color: transparent;
+    -webkit-text-fill-color: greenyellow;
+    position: relative;
+}
+
+.copy-link-btn-eth{
+
+    height: 52px;
+    border: 2px solid green;
+    border-radius: 5px;
+    background-color: transparent;
+    -webkit-text-fill-color: greenyellow;
+    position: relative;
+}
+
+.fa-ethereum{
+
+    position: relative;
+    opacity: 1;
+    color: green;
+    border: 1px solid greenyellow;
+    border-radius: 25px;
+    height: 48px;
+    width: 47px;
+    top: 12px;
+}
+
+.copy-link-btn-eth:hover{
+
+    cursor: pointer;
+    background-color: green;
+    border: 2px solid greenyellow;
+    transition: 500ms ease-in-out;
+}
+
+/*BTN BTC*/
+
+.copy-link-btc .copy-link-input-btc{
 
     opacity: 1;
     height: 52px;
@@ -138,7 +181,7 @@ body{
     color: green;
     border: 1px solid greenyellow;
     border-radius: 25px;
-    height: 48px;
+    height: 47px;
     width: 47px;
     top: 12px;
 }
@@ -149,4 +192,56 @@ body{
     background-color: green;
     border: 2px solid greenyellow;
     transition: 500ms ease-in-out;
+}
+
+
+/*BTN LTC*/
+
+.copy-link-ltc .copy-link-input-ltc{
+
+    opacity: 1;
+    height: 52px;
+    border: 2px solid green;
+    border-radius: 5px;
+    background-color: transparent;
+    -webkit-text-fill-color: greenyellow;
+    position: relative;
+}
+
+.copy-link-btn-ltc{
+
+    height: 52px;
+    border: 2px solid green;
+    border-radius: 5px;
+    background-color: transparent;
+    -webkit-text-fill-color: greenyellow;
+    position: relative;
+}
+
+.fa-litecoin-sign{
+
+    position: relative;
+    opacity: 1;
+    color: green;
+    border: 1px solid greenyellow;
+    border-radius: 25px;
+    height: 47px;
+    width: 47px;
+    top: 12px;
+}
+
+.copy-link-btn-ltc:hover{
+
+    cursor: pointer;
+    background-color: green;
+    border: 2px solid greenyellow;
+    transition: 500ms ease-in-out;
+}
+
+.ltci{
+
+    position: relative;
+    border: 1px solid greenyellow;
+    border-radius: 25px;
+    top: 12px;
 }
