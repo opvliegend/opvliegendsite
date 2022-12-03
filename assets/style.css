@@ -89,29 +89,12 @@ body{
     color: greenyellow;
 }
 
-.dtext2{
-
-    border: 1px solid green;
-    border-radius: 20px;
-    color: greenyellow;
-    position: relative;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.dtext2:hover{
-
-    transition: 0.5s ease-in;
-    color: green;
-    border-color: greenyellow;
-    font-family: 'Courier New', Courier, monospace;
-}
-
 .titeltxt{
 
     position: relative;
     text-align: center;
     color: greenyellow;
-    margin-top: 10px;
+    padding-top: 25px;
 }
 
 .btnhome img{
@@ -123,4 +106,47 @@ body{
     background-color: green;
     transition: 1s;
     border-radius: 6px;
+}
+
+
+
+.copy-link-btc .copy-link-input{
+
+    opacity: 1;
+    height: 52px;
+    border: 2px solid green;
+    border-radius: 5px;
+    background-color: transparent;
+    -webkit-text-fill-color: greenyellow;
+    position: relative;
+}
+
+.copy-link-btn-btc{
+
+    height: 52px;
+    border: 2px solid green;
+    border-radius: 5px;
+    background-color: transparent;
+    -webkit-text-fill-color: greenyellow;
+    position: relative;
+}
+
+.fa-bitcoin{
+
+    position: relative;
+    opacity: 1;
+    color: green;
+    border: 1px solid greenyellow;
+    border-radius: 25px;
+    height: 48px;
+    width: 47px;
+    top: 12px;
+}
+
+.copy-link-btn-btc:hover{
+
+    cursor: pointer;
+    background-color: green;
+    border: 2px solid greenyellow;
+    transition: 500ms ease-in-out;
 }

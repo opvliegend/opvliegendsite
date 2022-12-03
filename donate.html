@@ -9,89 +9,19 @@
     initial-scale=1.0">
     <title>Opvliegend</title>
     <link rel="stylesheet" href="./assets/style.css">
-
-    <style>
-        #space, .stars {
-          overflow: hidden;
-          position: absolute;
-          top: 0;
-          bottom: 0;
-          left: 0;
-          right: 0;
-        }
-        
-        .stars {
-          background-image: 
-            radial-gradient(2px 2px at 20px 30px, #eee, rgba(0,0,0,0)),
-            radial-gradient(2px 2px at 40px 70px, #fff, rgba(0,0,0,0)),
-            radial-gradient(2px 2px at 50px 160px, #ddd, rgba(0,0,0,0)),
-            radial-gradient(2px 2px at 90px 40px, #fff, rgba(0,0,0,0)),
-            radial-gradient(2px 2px at 130px 80px, #fff, rgba(0,0,0,0)),
-            radial-gradient(2px 2px at 160px 120px, #ddd, rgba(0,0,0,0));
-          background-repeat: repeat;
-          background-size: 200px 200px;
-        }
-        
-        body {
-          background: #000;
-        }
-          </style>
+    <script src="https://kit.fontawesome.com/482386ccee.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/all.css">
   
 </head>
 
 
 <body>
 
-    <style>
-#space, .stars {
-overflow: hidden;
-position: absolute;
-top: 0;
-bottom: 0;
-left: 0;
-right: 0;
-}
-
-.stars {
-background-image: 
-  radial-gradient(2px 2px at 20px 30px, green, rgba(0,0,0,0)),
-  radial-gradient(2px 2px at 40px 70px, greenyellow, rgba(0,0,0,0)),
-  radial-gradient(2px 2px at 50px 160px, green, rgba(0,0,0,0)),
-  radial-gradient(2px 2px at 90px 40px, greenyellow, rgba(0,0,0,0)),
-  radial-gradient(2px 2px at 130px 80px, greenyellow, rgba(0,0,0,0)),
-  radial-gradient(2px 2px at 160px 120px, greenyellow, rgba(0,0,0,0));
-background-repeat: repeat;
-background-size: 200px 200px;
-}
-
-body {
-background: #000;
-}
-</style>
-
-<div id="space">
-<div class="stars"></div>
-<div class="stars"></div>
-<div class="stars"></div>
-<div class="stars"></div>
-<div class="stars"></div>
-</div>
-
-
-<div id="parent">
-    <div class="stars"></div>
-    <div class="stars"></div>
-    <div class="stars"></div>
-    <div class="stars"></div>
-    <div class="stars"></div>
-
     <div class="btnhome">
         <a href="index.html">
         <img src="./assets/home.png/" alt="btnhome" width="52px" height="52px">
         </a>
     </div>
-
-</div>
 
 
 <div class="dtext">
@@ -100,16 +30,39 @@ background: #000;
 </center>
 </div>
 
-<div class="dtext2">
+<div class="copy-link-btc">
 
+  <h3 style="opacity: 0; font-size: 24px;">K</h3>
+  <h3 style="opacity: 0; font-size: 24px;">K</h3>
+  <h3 style="opacity: 0; font-size: 24px;">K</h3>
   <center>
-  <h2 style="font-size: 28px;">Ways to donate:</h2>
-  <br>
-  <h3 style="font-size: 20px;">BTC: </h3>
-  <h3 style="font-size: 20px;">LTC: </h3>
-  <h3 style="font-size: 20px;">ETH: </h3>
+  <i class="fa-brands fa-bitcoin fa-3x"></i>
+  <input type="button" class="copy-link-input" value="bc1qpywjqszkhsjzjfuhq2gwh5fdh7j6076czu0fc3" readonly>
+  <button type="button" class="copy-link-btn-btc">
+    <span class="material-icons">COPY</span>
+  </button>
   </center>
 </div>
+
+<script>
+  document.querySelectorAll(".copy-link-btc").forEach(copyLinkContainer => {
+    const inputField = copyLinkContainer.querySelector(".copy-link-input");
+    const copyButton = copyLinkContainer.querySelector(".copy-link-btn-btc");
+
+    inputField.addEventListener("focus", () => inputField.select());
+
+    copyButton.addEventListener("click", () => {
+
+      const text = inputField.value;
+
+      inputField.select();
+      navigator.clipboard.writeText(text);
+
+      inputField.value = "Copied";
+      setTimeout(() => inputField.value = text, 2000);
+    })
+  })
+</script>
 
 </body>
 </html>
